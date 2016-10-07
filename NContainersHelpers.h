@@ -1,57 +1,80 @@
 #ifndef _NContainersHelpers_H_
 #define _NContainersHelpers_H_
 
+/*
+* Copyright (C) 10/6/2016	
+*
+* @file         NContainersHelpers.hpp
+* @author       Robert Badea
+* @url		www.robertbadea.ro
+*/
+
+//--------------------------------------------------------------------
+//                              Includes
+//--------------------------------------------------------------------
 #include <map>
 #include <vector>
 
-namespace NContainersHelpers
+//--------------------------------------------------------------------
+//                         Class Declaration
+//--------------------------------------------------------------------
+namespace NUtility
 {
-	/**
-	* Usage: 
-	*
-	* std::map<string,int> myMap = InitMap<string,int>
-	* ("INTERNAL_CONST_DIGIT_ONE", 			1)
-	* ("INTERNAL_CONST_DIGIT_TWO", 			2)
-	* ("INTERNAL_CONST_DIGIT_SEVEN", 		7);
-	*
-	**/
-	
-	template <typename T, typename U>
-	class InitMap
+	namespace NContainersHelpers
 	{
-	public:
-		InitMap(const T& key, const U& value);
-		InitMap<T, U>& operator()(const T& key, const U& value);
-		operator std::map<T, U>();
-	private:
-		std::map<T, U> mMap;
-	};
-	
-	/**
-	* Usage: 
-	*
-	* std::vector<string> myVector = InitVector<string>
-	* ("INTERNAL_CONST_DIGIT_ONE")
-	* ("INTERNAL_CONST_DIGIT_TWO")
-	* ("INTERNAL_CONST_DIGIT_SEVEN");
-	*
-	**/
-	
-	template <typename T>
-	class InitVector
-	{
-	public:
-		InitVector(const T& value);
-		InitVector<T>& operator()(const T& value);
-		operator std::vector<T>();
-	private:
-		std::vector<T> mVector;
-	};
+		/**
+		* Usage:
+		*
+		* std::map<string,int> myMap = InitMap<string,int>
+		* ("INTERNAL_CONST_DIGIT_ONE", 			1)
+		* ("INTERNAL_CONST_DIGIT_TWO", 			2)
+		* ("INTERNAL_CONST_DIGIT_SEVEN", 		7);
+		*
+		**/
 
-}
+		template <typename T, typename U>
+		class InitMap
+		{
+		public:
+			InitMap(const T& key, const U& value);
+			InitMap<T, U>& operator()(const T& key, const U& value);
+			operator std::map<T, U>();
+		private:
+			std::map<T, U> mMap;
+		};
 
-namespace NContainersHelpers
+		/**
+		* Usage:
+		*
+		* std::vector<string> myVector = InitVector<string>
+		* ("INTERNAL_CONST_DIGIT_ONE")
+		* ("INTERNAL_CONST_DIGIT_TWO")
+		* ("INTERNAL_CONST_DIGIT_SEVEN");
+		*
+		**/
+
+		template <typename T>
+		class InitVector
+		{
+		public:
+			InitVector(const T& value);
+			InitVector<T>& operator()(const T& value);
+			operator std::vector<T>();
+		private:
+			std::vector<T> mVector;
+		};
+
+	} // namespace NContainersHelpers
+} // namespace NUtility 
+
+//--------------------------------------------------------------------
+//                         Implementation
+//--------------------------------------------------------------------
+
+namespace NUtility
 {
+	namespace NContainersHelpers
+	{
 	//--------------------Implementation of InitMap---------------------------
 
 	template <typename T, typename U>
@@ -105,6 +128,8 @@ namespace NContainersHelpers
 	}
 
 	//----------------------------End InitVector------------------------------
-}
+
+	} // namespace NContainersHelpers
+} // namespace NUtility 
 
 #endif // _NContainersHelpers_H_
