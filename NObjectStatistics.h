@@ -1,13 +1,11 @@
-#ifndef _NOBJECTSTATISTICS_H_
-#define _NOBJECTSTATISTICS_H_
-
-/*
-* Copyright (C) 10/7/2016
+#pragma once
+/******************************************************************************
+* Copyright (C) 10/07/2016
 *
 * @file         NObjectStatistics.hpp
 * @author       Robert Badea
 * @url		www.robertbadea.ro
-*/
+******************************************************************************
 
 //--------------------------------------------------------------------
 //                              Includes
@@ -61,6 +59,3 @@ namespace NUtility
 
 	} // namespace NObjectStatistics
 } // namespace NUtility 
-
-#endif // _NOBJECTSTATISTICS_H_
-
