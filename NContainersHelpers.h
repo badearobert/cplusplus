@@ -1,13 +1,11 @@
-#ifndef _NContainersHelpers_H_
-#define _NContainersHelpers_H_
-
-/*
-* Copyright (C) 10/6/2016	
+#pragma once
+/******************************************************************************
+* Copyright (C) 10/06/2016
 *
 * @file         NContainersHelpers.hpp
 * @author       Robert Badea
 * @url		www.robertbadea.ro
-*/
+******************************************************************************
 
 //--------------------------------------------------------------------
 //                              Includes
@@ -131,5 +129,3 @@ namespace NUtility
 
 	} // namespace NContainersHelpers
 } // namespace NUtility 
-
-#endif // _NContainersHelpers_H_
