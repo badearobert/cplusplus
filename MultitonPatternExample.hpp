@@ -50,7 +50,9 @@ namespace NDesignPatterns
 
 				// return value if found..
 				if (it != instances.end())
+				{
 					return std::weak_ptr<T*>(it->second);
+				}
 
 				// crate object if we reached this point
 				std::shared_ptr<T*>instance = std::make_shared<T*>(new T);
