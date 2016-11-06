@@ -4,7 +4,7 @@
 *
 * @file         MultitonPatternExample.hpp
 * @author       Robert Badea
-* @url			www.robertbadea.ro
+* @url		www.robertbadea.ro
 ******************************************************************************
 *
 * In software engineering, the multiton pattern is a design pattern similar to the singleton, which allows only one
@@ -39,9 +39,9 @@ namespace NDesignPatterns
 			/**
 			* The get function is a static that returns the instance if found in map, or creates one otherwise
 			*
-			* Note			This pattern is very similar to Flyweight, if the keys are limited to an enum, for example.
-			*				Multiton does pooling where object creation is resource intensive.
-			*				Flyweight pattern uses it to manage redundancy of the objects in the system.
+			* Note		This pattern is very similar to Flyweight, if the keys are limited to an enum, for example.
+			*		Multiton does pooling where object creation is resource intensive.
+			*		Flyweight pattern uses it to manage redundancy of the objects in the system.
 			**/
 			static std::weak_ptr<T*> get(const Key &key)
 			{
