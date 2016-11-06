@@ -6,7 +6,6 @@
 * @author       Robert Badea
 * @url		www.robertbadea.ro
 ******************************************************************************
-*
 * In software engineering, the singleton pattern is a design pattern that restricts the instantiation of a class to one object.
 * This is useful when exactly one object is needed to coordinate actions across the system.
 *
@@ -44,7 +43,7 @@ namespace NDesignPatterns
 		*			C++11 added move constructor / move assignment, so they also need to be made private (or deleted)
 		**/
 		//------------------------------------------------------------------------
-		//					SINGLETON IMPLEMENTATION - 
+		//			SINGLETON IMPLEMENTATION - 
 		//------------------------------------------------------------------------
 		class CSingleton
 		{
