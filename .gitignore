@@ -1,0 +1,14 @@
+CTemplate.h
+*.suo
+*.db
+cplusplus.VC.VC.opendb
+NAnyCast.hpp
+*.tlog
+cplusplus/Debug/vc140.pdb
+*.idb
+*.log
+cplusplus/Debug/main.obj
+*.exe
+Debug/cplusplus.ilk
+*.pdb
+CTemplate.hpp
