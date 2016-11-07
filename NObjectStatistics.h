@@ -5,12 +5,12 @@
 * @file         NObjectStatistics.hpp
 * @author       Robert Badea
 * @url		www.robertbadea.ro
-******************************************************************************
+******************************************************************************/
 
 //--------------------------------------------------------------------
 //                              Includes
 //--------------------------------------------------------------------
-
+#include <inttypes.h>			// for uint32_t
 //--------------------------------------------------------------------
 //                         Class Declaration
 //--------------------------------------------------------------------
@@ -35,12 +35,12 @@ namespace NUtility
 				++objects_alive;
 			}
 
-			static const unsigned GetObjectsCreated(void)
+			static const uint32_t GetObjectsCreated(void)
 			{
 				return objects_created;
 			}
 			
-			static const unsigned GetObjectsAlive(void)
+			static const uint32_t GetObjectsAlive(void)
 			{
 				return objects_alive;
 			}
@@ -51,11 +51,11 @@ namespace NUtility
 				--objects_alive;
 			}
 		private:
-			static unsigned objects_created;
-			static unsigned objects_alive;
+			static uint32_t objects_created;
+			static uint32_t objects_alive;
 		};
-		template <typename T> unsigned CObjectPool<T>::objects_created(0);
-		template <typename T> unsigned CObjectPool<T>::objects_alive(0);
+		template <typename T> uint32_t CObjectPool<T>::objects_created(0);
+		template <typename T> uint32_t CObjectPool<T>::objects_alive(0);
 
 	} // namespace NObjectStatistics
 } // namespace NUtility 
