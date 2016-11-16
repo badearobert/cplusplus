@@ -3,8 +3,9 @@
 * Copyright (C) 10/15/2016
 *
 * @file         FactoryPatternExample.hpp
+* @project		DesignPatterns_Factory
 * @author       Robert Badea
-* @url		www.robertbadea.ro
+* @url			www.robertbadea.ro
 ******************************************************************************
 *
 * Factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects 
@@ -20,6 +21,7 @@
 //--------------------------------------------------------------------
 //                              Includes
 //--------------------------------------------------------------------
+#include <iostream>		// for printing in the call function
 #include <memory>		// for C++11 unique_ptr
 #include <string>		// param in factory pattern implementation
 
@@ -42,6 +44,7 @@ namespace NDesignPatterns
 		*/
 		class CBaseClass
 		{
+		public:
 			virtual void call(void) = 0;
 		};
 
@@ -52,11 +55,19 @@ namespace NDesignPatterns
 		*/
 		class CDerivedClassOne : public CBaseClass
 		{
-			void call(void) override { /* logic specific to CDerivedClassOne */ }
+		public:
+			void call(void) override { 
+				/* logic specific to CDerivedClassOne */ 
+				std::cout << "CDerivedClassOne: call function" << std::endl;
+			}
 		};
 		class CDerivedClassTwo : public CBaseClass
 		{
-			void call(void) override {  /* logic specific to CDerivedClassTwo */ }
+		public:
+			void call(void) override {  
+				/* logic specific to CDerivedClassTwo */ 
+				std::cout << "CDerivedClassTwo: call function" << std::endl;
+			}
 		};
 
 		/*
@@ -68,7 +79,11 @@ namespace NDesignPatterns
 		*/
 		class CNullObject : public CBaseClass
 		{
-			void call(void) override { /* do nothing */ }
+		public:
+			void call(void) override { 
+				/* do nothing */ 
+				std::cout << "CNullObject: call function" << std::endl;
+			}
 		};
 
 		//------------------------------------------------------------------------

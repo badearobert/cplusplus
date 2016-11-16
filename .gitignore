@@ -12,3 +12,4 @@ cplusplus/Debug/main.obj
 Debug/cplusplus.ilk
 *.pdb
 CTemplate.hpp
+*.obj

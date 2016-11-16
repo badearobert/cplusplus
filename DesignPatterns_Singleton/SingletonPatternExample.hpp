@@ -3,8 +3,9 @@
 * Copyright (C) 11/06/2016
 *
 * @file         SingletonPatternExample.hpp
+* @project		DesignPatterns_Singleton
 * @author       Robert Badea
-* @url		www.robertbadea.ro
+* @url			www.robertbadea.ro
 ******************************************************************************
 * In software engineering, the singleton pattern is a design pattern that restricts the instantiation of a class to one object.
 * This is useful when exactly one object is needed to coordinate actions across the system.
@@ -69,7 +70,7 @@ namespace NDesignPatterns
 			/**
 			* The object should not be created from outside of the class
 			**/
-			CSingleton();
+			CSingleton() { }
 
 			/**
 			* Disallow the following call: 

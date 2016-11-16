@@ -18,9 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MultitonPatternExample.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E0DF4950-88FE-46E5-90B2-406FCD111280}</ProjectGuid>
-    <RootNamespace>cplusplus</RootNamespace>
+    <ProjectGuid>{C38E575C-8583-425B-97C0-EF5A825EF8F0}</ProjectGuid>
+    <RootNamespace>DesignPatterns_Multiton</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -109,19 +115,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\CTemplate.hpp" />
-    <ClInclude Include="..\DesignPatterns\FactoryPatternExample.hpp" />
-    <ClInclude Include="..\DesignPatterns\MultitonPatternExample.hpp" />
-    <ClInclude Include="..\DesignPatterns\SingletonPatternExample.hpp" />
-    <ClInclude Include="..\NAnyCast.hpp" />
-    <ClInclude Include="..\NContainersHelpers.h" />
-    <ClInclude Include="..\NObjectStatistics.h" />
-    <ClInclude Include="..\OperatorOverloadingExample.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

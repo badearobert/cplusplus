@@ -3,6 +3,7 @@
 * Copyright (C) 11/06/2016
 *
 * @file         MultitonPatternExample.hpp
+* @project		DesignPatterns_Multiton
 * @author       Robert Badea
 * @url		www.robertbadea.ro
 ******************************************************************************
