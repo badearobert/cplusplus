@@ -13,3 +13,4 @@ Debug/cplusplus.ilk
 *.pdb
 CTemplate.hpp
 *.obj
+*.ilk
