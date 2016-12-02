@@ -24,6 +24,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\MultitonUML.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C38E575C-8583-425B-97C0-EF5A825EF8F0}</ProjectGuid>
     <RootNamespace>DesignPatterns_Multiton</RootNamespace>

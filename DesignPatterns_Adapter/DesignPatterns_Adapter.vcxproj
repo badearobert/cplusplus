@@ -18,18 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="FactoryPatternExample.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\FactoryUML.png" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BA9511B9-DDD7-4B1D-9C71-4141FE9DD7A0}</ProjectGuid>
-    <RootNamespace>DesignPatterns_Factory</RootNamespace>
+    <ProjectGuid>{443B9963-0CA9-463D-9F8A-4D81B2977269}</ProjectGuid>
+    <RootNamespace>DesignPatterns_Adapter</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,6 +109,16 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdaptableClass.h" />
+    <ClInclude Include="AdapterPatternExample.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\AdapterUML.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -20,12 +20,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SingletonPatternExample.hpp">
+    <ClInclude Include="AdapterPatternExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptableClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="resources\singletonUML.png">
+    <Image Include="resources\AdapterUML.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

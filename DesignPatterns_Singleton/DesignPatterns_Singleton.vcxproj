@@ -24,6 +24,9 @@
   <ItemGroup>
     <ClInclude Include="SingletonPatternExample.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\singletonUML.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FED8AF5B-6536-4D82-9504-C0AD38CC9602}</ProjectGuid>
     <RootNamespace>DesignPatterns_Singleton</RootNamespace>
