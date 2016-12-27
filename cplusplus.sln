@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPatterns_Strategy", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.vcxproj", "{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPatterns_Observer", "DesignPatterns_Observer\DesignPatterns_Observer.vcxproj", "{74F4FF46-A849-43D8-BC6C-80985AA07134}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x64.Build.0 = Release|x64
 		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x86.ActiveCfg = Release|Win32
 		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x86.Build.0 = Release|Win32
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Debug|x64.ActiveCfg = Debug|x64
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Debug|x64.Build.0 = Debug|x64
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Debug|x86.ActiveCfg = Debug|Win32
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Debug|x86.Build.0 = Debug|Win32
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Release|x64.ActiveCfg = Release|x64
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Release|x64.Build.0 = Release|x64
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Release|x86.ActiveCfg = Release|Win32
+		{74F4FF46-A849-43D8-BC6C-80985AA07134}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
