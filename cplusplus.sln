@@ -15,6 +15,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPatterns_Adapter", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPatterns_Composite", "DesignPatterns_Composite\DesignPatterns_Composite.vcxproj", "{6ECDA69F-3339-4D08-83D6-6AECA3FC3E75}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingAlgorithms", "SortingAlgorithms_InsertionSort\SortingAlgorithms_InsertionSort.vcxproj", "{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPatterns_Strategy", "DesignPatterns_Strategy\DesignPatterns_Strategy.vcxproj", "{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +75,22 @@ Global
 		{6ECDA69F-3339-4D08-83D6-6AECA3FC3E75}.Release|x64.Build.0 = Release|x64
 		{6ECDA69F-3339-4D08-83D6-6AECA3FC3E75}.Release|x86.ActiveCfg = Release|Win32
 		{6ECDA69F-3339-4D08-83D6-6AECA3FC3E75}.Release|x86.Build.0 = Release|Win32
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Debug|x64.ActiveCfg = Debug|x64
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Debug|x64.Build.0 = Debug|x64
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Debug|x86.ActiveCfg = Debug|Win32
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Debug|x86.Build.0 = Debug|Win32
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x64.ActiveCfg = Release|x64
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x64.Build.0 = Release|x64
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x86.ActiveCfg = Release|Win32
+		{98EFB5AD-7AEF-4EB5-AA81-946696A9BAC7}.Release|x86.Build.0 = Release|Win32
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Debug|x64.ActiveCfg = Debug|x64
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Debug|x64.Build.0 = Debug|x64
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Debug|x86.Build.0 = Debug|Win32
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Release|x64.ActiveCfg = Release|x64
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Release|x64.Build.0 = Release|x64
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Release|x86.ActiveCfg = Release|Win32
+		{95537AC2-8022-4BA5-AB95-C4E0E068A2A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
