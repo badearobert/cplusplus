@@ -28,5 +28,8 @@
     <Image Include="resources\FactoryUML.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="resources\Factory_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

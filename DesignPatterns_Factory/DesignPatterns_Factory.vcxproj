@@ -26,6 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\FactoryUML.png" />
+    <Image Include="resources\Factory_1.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BA9511B9-DDD7-4B1D-9C71-4141FE9DD7A0}</ProjectGuid>

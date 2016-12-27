@@ -28,5 +28,8 @@
     <Image Include="resources\singletonUML.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="resources\singleton_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

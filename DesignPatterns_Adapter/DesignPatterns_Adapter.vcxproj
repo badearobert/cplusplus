@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\AdapterUML.png" />
+    <Image Include="resources\Adapter_1.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

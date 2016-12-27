@@ -115,6 +115,10 @@
   <ItemGroup>
     <ClInclude Include="StrategyPatternExample.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\StrategyUML.png" />
+    <Image Include="resources\Strategy_1.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
