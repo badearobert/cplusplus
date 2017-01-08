@@ -58,6 +58,7 @@ namespace NDesignPatterns
 			}
 
 			/**
+			* we need access to the class from inside-out
 			**/
 			friend class CSystemState;
 
