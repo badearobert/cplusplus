@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{74F4FF46-A849-43D8-BC6C-80985AA07134}</ProjectGuid>
-    <RootNamespace>DesignPatterns_Observer</RootNamespace>
+    <ProjectGuid>{87399ECE-DED6-4444-A7F7-1CEE76CC6B35}</ProjectGuid>
+    <RootNamespace>DesignPatterns_Decorator</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,11 +113,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ObserverPatternExample.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\Observer_1.png" />
-    <Image Include="resources\Observer_2.png" />
+    <ClInclude Include="DecoratorPattern_Example.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,16 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ObserverPatternExample.hpp">
+    <ClInclude Include="FacadePatternExample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\Observer_2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="resources\Observer_1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>
