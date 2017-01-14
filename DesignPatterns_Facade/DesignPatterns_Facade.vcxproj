@@ -115,6 +115,10 @@
   <ItemGroup>
     <ClInclude Include="FacadePatternExample.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\Facade_1.png" />
+    <Image Include="resources\Facade_2.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

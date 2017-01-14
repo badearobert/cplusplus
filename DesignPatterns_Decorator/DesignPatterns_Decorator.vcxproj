@@ -115,6 +115,9 @@
   <ItemGroup>
     <ClInclude Include="DecoratorPattern_Example.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\Decorator_1.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
