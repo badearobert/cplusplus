@@ -115,6 +115,10 @@
   <ItemGroup>
     <ClInclude Include="TemplatePatternExample.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\Template_1.jpg" />
+    <Image Include="resources\Template_2.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
