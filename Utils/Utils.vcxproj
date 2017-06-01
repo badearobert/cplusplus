@@ -22,7 +22,7 @@
     <ClInclude Include="NAnyCast.hpp" />
     <ClInclude Include="NContainersHelpers.h" />
     <ClInclude Include="NObjectStatistics.h" />
-    <ClInclude Include="OperatorOverloadingExample.hpp" />
+    <ClInclude Include="NonCopyable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

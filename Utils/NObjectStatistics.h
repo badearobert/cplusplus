@@ -4,8 +4,18 @@
 *
 * @file         NObjectStatistics.hpp
 * @author       Robert Badea
-* @url		www.robertbadea.ro
-******************************************************************************/
+* @url			www.robertbadea.ro
+******************************************************************************
+* Statistics of object counter
+*
+* Usage:
+* class CObjectCounter : private CObjectPool<CObjectCounter> { };
+*
+* class Tables : CObjectCounter { };
+* class Chairs : CObjectCounter { };
+*
+* CObjectCounter::GetObjectsCreated(); // tables + chairs + etc
+*****************************************************************************/
 
 //--------------------------------------------------------------------
 //                              Includes
