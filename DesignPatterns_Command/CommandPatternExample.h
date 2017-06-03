@@ -23,35 +23,24 @@ namespace NDesignPatterns
 	namespace NCommandPattern
 	{
 		/**
-		* Namespace containing the available commands
+		*  Command interface
 		**/
-		namespace NCommands
+		class ICommand 
 		{
-			using CommandFunction = std::function<void()>;
-			CommandFunction function1 = []() { std::cout << "Called function1 \n";  };
-			CommandFunction function2 = []() { std::cout << "Called function2 \n";  };
-			CommandFunction function3 = []() { std::cout << "Called function3 \n";  };
-		}
-
+		public:
+			virtual void execute() = 0;
+		};
 		/**
 		* Data for a specific command
 		**/
-		class Command
+		class CCommand_1 : public ICommand
 		{
-		public:
-			Command(std::string description, NCommands::CommandFunction functor)
-				: mDescription(description)
-				, mFunctor(functor)
-			{
+			virtual void execute() override { std::cout << "CCommand_1 execute" << std::endl; }
+		};
 
-			}
-
-			std::string getDescription() const { return mDescription; }
-			void execute() { mFunctor(); }
-
-		private:
-			std::string mDescription;
-			NCommands::CommandFunction mFunctor;
+		class CCommand_2 : public ICommand
+		{
+			virtual void execute() override { std::cout << "CCommand_2 execute" << std::endl; }
 		};
 
 		/**
@@ -63,9 +52,11 @@ namespace NDesignPatterns
 		public:
 			CCommandContainer()
 			{
-				mCommands.push_back( std::make_unique<Command>("function1: ", NCommands::function1) );
-				mCommands.push_back( std::make_unique<Command>("function2: ", NCommands::function2) );
-				mCommands.push_back( std::make_unique<Command>("function3: ", NCommands::function3) );
+				mCommands.push_back(std::unique_ptr<ICommand>(new CCommand_1));
+				mCommands.push_back(std::unique_ptr<ICommand>(new CCommand_2));
+			}
+			~CCommandContainer()
+			{
 			}
 			void callFunction(const uint32_t id)
 			{
@@ -75,7 +66,7 @@ namespace NDesignPatterns
 				}
 			}
 		private:
-			std::vector<std::unique_ptr<Command>> mCommands;
+			std::vector<std::unique_ptr<ICommand>> mCommands;
 		};
 	} // NCommandPattern
 } // NDesignPatterns

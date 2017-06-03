@@ -21,7 +21,6 @@ int main()
 	CCommandContainer cmdContainer;
 	cmdContainer.callFunction(0);
 	cmdContainer.callFunction(1);
-	cmdContainer.callFunction(2);
 
 	cin.get();
 	return 0;
