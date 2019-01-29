@@ -44,7 +44,7 @@ namespace NDesignPatterns
 			*		Multiton does pooling where object creation is resource intensive.
 			*		Flyweight pattern uses it to manage redundancy of the objects in the system.
 			**/
-			static std::weak_ptr<T*> get(const Key &key)
+			static std::weak_ptr<T> get(const Key &key)
 			{
 				// check for an existent value..
 				const auto it = instances.find(key);
@@ -52,15 +52,15 @@ namespace NDesignPatterns
 				// return value if found..
 				if (it != instances.end())
 				{
-					return std::weak_ptr<T*>(it->second);
+					return std::weak_ptr<T>(it->second);
 				}
 
 				// crate object if we reached this point
-				std::shared_ptr<T*>instance = std::make_shared<T*>(new T);
+				std::shared_ptr<T>instance = std::make_shared<T>();
 
 				// the code from below will not throw any exceptions, it is safe to add in map
 				instances[key] = instance;
-				return std::weak_ptr<T*>(instance);
+				return std::weak_ptr<T>(instance);
 			}
 
 		private:
@@ -73,10 +73,10 @@ namespace NDesignPatterns
 			/**
 			* The static map for the multiton object which shall keep the pointers to our singletons.
 			**/
-			static std::map<Key, std::shared_ptr<T*>> instances;
+			static std::map<Key, std::shared_ptr<T>> instances;
 		};
 
 		template <typename T, typename Key>
-		std::map<Key, std::shared_ptr<T*>> CMultiton<T, Key>::instances;
+		std::map<Key, std::shared_ptr<T>> CMultiton<T, Key>::instances;
 	} // NMultitonPattern
 } // NDesignPatterns
